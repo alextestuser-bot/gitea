@@ -17,6 +17,7 @@ pipeline {
            steps {
              sh '''
                 cd gitea
+                docker-compose down
                 docker-compose up -d 
                '''
            }
